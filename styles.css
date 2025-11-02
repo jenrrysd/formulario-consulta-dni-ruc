@@ -1,0 +1,70 @@
+.container-consulta {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e9e6e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.h2-consulta {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.label-consulta {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-text-consulta {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-submit-consulta {
+    width: 100%;
+    padding: 10px;
+    background-color: #2f3db3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-submit-consulta:hover {
+    background-color: #131f6d;
+}
+
+.container-consulta{
+    margin-top: 20px;
+
+}
+
+.hidden {
+    display: none;
+}   
+
+.readonly {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.footer-consulta {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .container-consulta {
+        padding: 10px;
+    }
+}   

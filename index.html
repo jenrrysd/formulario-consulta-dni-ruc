@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas RUC y DNI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container-consulta">
+
+    <h2 class="h2-consulta">Consultas RUC y DNI</h2>
+    <form id="consulta-form">
+        <label class="label-consulta" for="tipoDocumento">Seleccione tipo de Documento:</label>
+        <select id="tipoDocumento" class="input-text-consulta" required>
+            <option value="">--Seleccione--</option>
+            <option value="ruc">RUC</option>
+            <option value="dni">DNI</option>
+        </select>
+
+        <label class="label-consulta" for="numeroDocumento">Número de Documento:</label>
+        <input type="text" class="input-text-consulta" id="numeroDocumento" placeholder="Ingrese número de documento" required>
+        <input type="submit" class="input-submit-consulta" value="Consultar">
+    </form>
+
+    <div class="resultado-consulta">
+        <div id="rucResultado" class="hidden">
+            <label class="label-consulta">Razon Social:</label>
+            <input type="text" class="input-text-consulta readonly" id="razonSocial" readonly>
+
+            <label class="label-consulta">Dirección</label>
+            <input type="text" class="input-text-consulta readonly" id="direccion" readonly>
+
+            <label class="label-consulta">Departamento:</label>
+            <input type="text" class="input-text-consulta readonly" id="departamento" readonly>
+
+            <label class="label-consulta">Provincia:</label>
+            <input type="text" class="input-text-consulta readonly" id="provincia" readonly>
+
+            <label class="label-consulta">Distrito:</label>
+            <input type="text" class="input-text-consulta readonly" id="distrito" readonly>
+
+            <label class="label-consulta">ID Departamento:</label>
+            <input type="text" class="input-text-consulta readonly" id="idDepartamento" readonly>
+
+            <label class="label-consulta">ID Provincia:</label>
+            <input type="text" class="input-text-consulta readonly" id="idProvincia" readonly>
+
+            <label class="label-consulta">ID Distrito:</label>
+            <input type="text" class="input-text-consulta readonly" id="idDistrito" readonly>
+
+            <label class="label-consulta">Ubigeo:</label>
+            <input type="text" class="input-text-consulta readonly" id="ubigeoRuc" readonly>
+        </div>
+
+        <div id="dniResultado" class="hidden">
+            <label class="label-consulta">Nombres:</label>
+            <input type="text" class="input-text-consulta readonly" id="nombres" readonly>
+
+            <label class="label-consulta">Apellido Paterno:</label>
+            <input type="text" class="input-text-consulta readonly" id="apellidoPaterno" readonly>
+
+            <label class="label-consulta">Apellido Materno:</label>
+            <input type="text" class="input-text-consulta readonly" id="apellidoMaterno" readonly>
+        </div>
+    </div>
+
+</div>
+    <footer class="footer-consulta">
+        <p>&copy; Creado por Jenrry Soto Dextre</p>
+        <p>Pagina web: <a href="https://dextre.xyz" target="_blank">https://dextre.xyz</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
